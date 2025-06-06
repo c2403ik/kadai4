@@ -1,14 +1,7 @@
-name: gcd_test
-on: [push]
-
-jobs:
-  check-bats-version:
-    runs-on: ubuntsulatest
-    run: test-gcd.sh
-        
-name: same_test
+ name: gcd_test
  on: [push]
- jobs:
+ 
+jobs:
  io_test:
    name: Use Linux commands
    runs-on: ubuntu-latest
