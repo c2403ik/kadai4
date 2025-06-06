@@ -1,0 +1,16 @@
+name: gcd_test
+on: [push]
+
+jobs:
+  io_test:
+    name: Use Linux commands
+  runs-on: ubuntu-latest
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Permission Setting
+      run: chmod +x gcd.sh test-gcd.sh
+    - name: Test Run
+      run: test-gcd.sh
+        
+ 
