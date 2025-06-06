@@ -6,9 +6,9 @@ jobs:
    name: Use Linux commands
    runs-on: ubuntu-latest
    steps:
-   -name: Checkout
+   - name: Checkout
    uses: actions/checkout@v4
-   -name: Permission Setting
-   run: chmod +x gcd.sh test_gcd.sh
-   -name: Test Run
+   - name: Permission Setting
+   run: chmod +x gcd.sh test-gcd.sh
+   - name: Test Run
    run: ./test-gcd.sh 
